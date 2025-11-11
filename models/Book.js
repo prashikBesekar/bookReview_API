@@ -19,6 +19,11 @@ const bookSchema = new mongoose.Schema({
     type: Number,
     default: 0, // no reviews yet
   },
-});
+ totalReviews: 
+ { type: Number, default: 0 } 
+
+},
+{ timestamps: true }
+);
 
 export default mongoose.model("Book", bookSchema);

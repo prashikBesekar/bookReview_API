@@ -114,7 +114,7 @@ export const getReviews = async (req,res) =>{
 
         //query params
         const page = parseInt(req.query.page) || 1 ;
-        const limit = parseInt(req.query.limit) || 10;
+        const limit = parseInt(req.query.limit) || 5;
         const sortBy = req.query.sort || "newest"
         const search = req.query.search || "";
         const ratingFilter = req.query.rating ? parseInt(req.query.rating) : null;
